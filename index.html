@@ -58,7 +58,7 @@
 
     <!-- Step 1 start -->
 
-    <div class="form" id="form1">
+    <!-- <div class="form" id="form1">
       <h3>Personal Info</h3>
       <p>
         Please provide your name, email address, and phone number.
@@ -80,28 +80,34 @@
         <div class="btnGrp1">
           <button class="btn" onclick="next1()">Next Step</button>
         </div> 
-    </div>
+    </div> -->
 
     <div class="form" id="form2">
-      <h3>Personal Info</h3>
+      <h3>Select Your Plan</h3>
       <p>
-        Please provide your name, email address, and phone number.
+        You have the option of monthly or yearly billing.
       </p>
-      <form>
-        <div class="formField">
-          <label for="name">Name <span class="err">This Field is Required</span> </label>
-          <input type="text" name="name" id="name" placeholder="e.g. Stephen King" onblur=nameCheck() required>
-        </div>
-        <div class="formField">
-          <label for="email">Email Address<span class="err">This Field is Required</span> </label>
-          <input type="email" name="email" id="email" placeholder="e.g. stephenking@lorem.com" onblur=emailCheck() required>
-        </div>
-          <div class="formField">
-            <label for="phone">Phone No<span class="err">This Field is Required</span> </label>
-            <input type="tel" name="phone" id="contact" placeholder="e.g. +1 234 567 890" onblur=phoneCheck() required>
-          </div>
-        </form>   
-        <div class="btnGrp1">
+      <div class="cardList">
+<div class="card_monthly">
+  <img src="./assets/images/icon-arcade.svg" alt="">
+  <h6>Arcade</h6>
+  <p>$9/month</p>
+</div>
+<div class="card_monthly">
+  <img src="./assets/images/icon-advanced.svg" alt="">
+  <h6>Advanced</h6>
+  <p>$12/month</p>
+</div>
+<div class="card_monthly">
+  <img src="./assets/images/icon-pro.svg" alt="">
+  <h6>Pro</h6>
+  <p>$15/month</p>
+</div>
+      </div>
+      
+        <div class="btnGrp2">
+          
+          <button class="btn" onclick="next2()">Go Back</button>
           <button class="btn" onclick="next2()">Next Step</button>
         </div> 
     </div>

@@ -144,3 +144,20 @@ label{
     align-items: center;
 
 }
+.cardList{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card_monthly{
+    width: 35%;
+    border: 1px solid hsla(231, 11%, 63%,0.5);
+    border-radius: 3px;
+    padding: 5px;
+    line-height: 5px;
+    margin: 5px;
+}
+.card_monthly img{
+    margin: 15px 0;
+}
