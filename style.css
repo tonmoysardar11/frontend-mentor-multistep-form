@@ -1,0 +1,146 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+    
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 20px;
+}
+
+
+.sidebar{
+    background-image: url('/assets/images/bg-sidebar-desktop.svg');
+    background-repeat: no-repeat ;
+    background-size: 100%;
+    width: 274px;
+    height: 568px;
+    margin: 10px;
+    
+
+}
+
+.widgetList{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: max-content;
+    margin: 10px auto;
+    color: hsl(229, 24%, 87%);
+}
+
+.widget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+.widget_no{
+    border: 1px solid hsl(229, 24%, 87%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin: 0 10px;
+}
+.widget_head{
+    font-weight: lighter;
+    font-size: 13px;
+}
+.widget_head p{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.widget_active{
+    background-color: hsl(229, 24%, 87%);
+    color: hsl(0, 0%, 0%);
+}
+
+.form{
+margin: 35px 50px 50px 50px;
+color: hsl(213, 96%, 18%);
+font-weight: 700;
+
+}
+
+.form h3{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.form p{
+    font-weight: lighter;
+    color: hsl(231, 11%, 63%);
+    font-size: 12px;
+    margin: 10px 0;
+}
+.formField{
+    margin: 15px 0;
+}
+.formField label{
+    font-weight: 700;
+    
+}
+.formField input:required{
+    margin: 8px 0;
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid hsla(231, 11%, 63%,0.5);
+}
+
+.form input::placeholder{
+    padding-left:  10px;
+    color: hsl(213, 96%, 18%);
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: hsl(213, 96%, 18%);
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.btnGrp1{
+    position: relative;
+    top: 33%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.err{
+    color: hsl(354, 84%, 57%);
+    font-size: 10px;
+    opacity: 0;
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}

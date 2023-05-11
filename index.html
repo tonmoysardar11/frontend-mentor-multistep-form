@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+  <main>
+    <!-- Sidebar start -->
+
+    <div class="sidebar">
+      <div class="widgetList">
+        <section class="widget">
+          <div class="widget_no widget_active">1</div>
+          <div class="widget_head">
+            <h6>STEP 1</h6>
+            <p>Your Info</p>
+          </div>
+        </section>
+        <section class="widget">
+          <div class="widget_no">2</div>
+          <div class="widget_head">
+            <h6>STEP 2</h6>
+            <p>Select Plan</p>
+          </div>
+        </section>
+        <section class="widget">
+          <div class="widget_no ">3</div>
+          <div class="widget_head">
+            <h6>STEP 3</h6>
+            <p>Add-ons</p>
+          </div>
+        </section>
+        <section class="widget">
+          <div class="widget_no">4</div>
+          <div class="widget_head">
+            <h6>STEP 4</h6>
+            <p>Summary</p>
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+    <!-- Sidebar end -->
+
+    <!-- Step 1 start -->
+
+    <div class="form" id="form1">
+      <h3>Personal Info</h3>
+      <p>
+        Please provide your name, email address, and phone number.
+      </p>
+      <form>
+        <div class="formField">
+          <label for="name">Name <span class="err">This Field is Required</span> </label>
+          <input type="text" name="name" id="name" placeholder="e.g. Stephen King" onblur=nameCheck() required>
+        </div>
+        <div class="formField">
+          <label for="email">Email Address<span class="err">This Field is Required</span> </label>
+          <input type="email" name="email" id="email" placeholder="e.g. stephenking@lorem.com" onblur=emailCheck() required>
+        </div>
+          <div class="formField">
+            <label for="phone">Phone No<span class="err">This Field is Required</span> </label>
+            <input type="tel" name="phone" id="contact" placeholder="e.g. +1 234 567 890" onblur=phoneCheck() required>
+          </div>
+        </form>   
+        <div class="btnGrp1">
+          <button class="btn" onclick="next1()">Next Step</button>
+        </div> 
+    </div>
+
+    <div class="form" id="form2">
+      <h3>Personal Info</h3>
+      <p>
+        Please provide your name, email address, and phone number.
+      </p>
+      <form>
+        <div class="formField">
+          <label for="name">Name <span class="err">This Field is Required</span> </label>
+          <input type="text" name="name" id="name" placeholder="e.g. Stephen King" onblur=nameCheck() required>
+        </div>
+        <div class="formField">
+          <label for="email">Email Address<span class="err">This Field is Required</span> </label>
+          <input type="email" name="email" id="email" placeholder="e.g. stephenking@lorem.com" onblur=emailCheck() required>
+        </div>
+          <div class="formField">
+            <label for="phone">Phone No<span class="err">This Field is Required</span> </label>
+            <input type="tel" name="phone" id="contact" placeholder="e.g. +1 234 567 890" onblur=phoneCheck() required>
+          </div>
+        </form>   
+        <div class="btnGrp1">
+          <button class="btn" onclick="next2()">Next Step</button>
+        </div> 
+    </div>
+    
+
+  </main>
+
+
+
+<!-- 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="index.js"></script>
+</body>
+
+</html>
