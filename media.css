@@ -50,4 +50,25 @@
         transform: translateY(200%);
 
     }
+
+    .cardList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_monthly {
+        width: 70vw;
+        display: flex;
+        align-items: center;
+    }
+    .card_monthly >*{
+        margin: 0 5px;
+    }
+
+
+    
+
+
 }
