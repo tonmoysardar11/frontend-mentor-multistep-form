@@ -92,31 +92,44 @@
           You have the option of monthly or yearly billing.
         </p>
         <div class="cardList">
-          <div class="card_monthly">
-            <img src="./assets/images/icon-arcade.svg" alt="">
-            <div class="card_Detail">
-              <h6>Arcade</h6>
-              <p id="plan_1">$9/month</p>
-              <p class="free">2 Months free</p>
+          <input type='radio' name='radio' id='radio1' />
+          <label for='radio1'>
+            <div class="card_monthly">
+              <img src="./assets/images/icon-arcade.svg" alt="">
+              <div class="card_Detail">
+                <h6>Arcade</h6>
+                <p id="plan_1">$9/month</p>
+                <p class="free" id="free1">2 Months free</p>
+              </div>
             </div>
-          </div>
-          <div class="card_monthly">
-            <img src="./assets/images/icon-advanced.svg" alt="">
-            <div class="card_Detail">
-              <h6>Advanced</h6>
-              <p id="plan_2">$12/month</p>
-              <p class="free">2 Months free</p>
+          </label>
+          <input type='radio' name='radio' id='radio2' />
+          <label for='radio2'>
+            <div class="card_monthly">
+              <img src="./assets/images/icon-advanced.svg" alt="">
+              <div class="card_Detail">
+                <h6>Advanced</h6>
+                <p id="plan_2">$12/month</p>
+                <p class="free" id="free2">2 Months free</p>
+              </div>
             </div>
-          </div>
-          <div class="card_monthly">
-            <img src="./assets/images/icon-pro.svg" alt="">
-            <div class="card_Detail">
-              <h6>Pro</h6>
-              <p id="plan_3">$15/month</p>
-              <p class="free">2 Months free</p>
+          </label>
+          <input type='radio' name='radio' id='radio3' />
+          <label for='radio3'>
+            <div class="card_monthly">
+              <img src="./assets/images/icon-pro.svg" alt="">
+              <div class="card_Detail">
+                <h6>Pro</h6>
+                <p id="plan_3">$15/month</p>
+                <p class="free" id="free3">2 Months free</p>
+              </div>
             </div>
-          </div>
+          </label>
         </div>
+      </div>
+
+      <div id="err2">
+        <p>Select A Plan </p>
       </div>
       <div class="switchBtn">
         <p id="switchBtn_1" class="active_switch">Monthly</p>
@@ -126,9 +139,26 @@
         </label>
         <p id="switchBtn_2">Yearly</p>
       </div>
+
+
       <div class="btnGrp2">
 
-        <p class="btn_back"> Go Back</p>
+        <p class="btn_back" onclick="back1()" style="cursor: pointer;"> Go Back</p>
+        <button class="btn_Nxt" onclick="next2()">Next Step</button>
+      </div>
+    </div>
+
+    <div class="form" id="form3">
+      <div class="formContent"></div>
+
+      <div id="err2">
+        <p>Select A Plan </p>
+      </div>
+
+
+      <div class="btnGrp2">
+
+        <p class="btn_back" onclick="back1()" style="cursor: pointer;"> Go Back</p>
         <button class="btn_Nxt" onclick="next2()">Next Step</button>
       </div>
     </div>
