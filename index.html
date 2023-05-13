@@ -95,25 +95,36 @@
           <div class="card_monthly">
             <img src="./assets/images/icon-arcade.svg" alt="">
             <div class="card_Detail">
-            <h6>Arcade</h6>
-            <p>$9/month</p>
-          </div>
+              <h6>Arcade</h6>
+              <p id="plan_1">$9/month</p>
+              <p class="free">2 Months free</p>
+            </div>
           </div>
           <div class="card_monthly">
             <img src="./assets/images/icon-advanced.svg" alt="">
             <div class="card_Detail">
-            <h6>Advanced</h6>
-            <p>$12/month</p>
+              <h6>Advanced</h6>
+              <p id="plan_2">$12/month</p>
+              <p class="free">2 Months free</p>
             </div>
           </div>
           <div class="card_monthly">
             <img src="./assets/images/icon-pro.svg" alt="">
             <div class="card_Detail">
-            <h6>Pro</h6>
-            <p>$15/month</p>
+              <h6>Pro</h6>
+              <p id="plan_3">$15/month</p>
+              <p class="free">2 Months free</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="switchBtn">
+        <p id="switchBtn_1" class="active_switch">Monthly</p>
+        <label class="switch">
+          <input type="checkbox" class="checkbox" onclick="changePlan()">
+          <div class="slider"></div>
+        </label>
+        <p id="switchBtn_2">Yearly</p>
       </div>
       <div class="btnGrp2">
 

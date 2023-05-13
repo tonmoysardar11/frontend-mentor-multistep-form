@@ -67,6 +67,14 @@
         margin: 0 5px;
     }
 
+    .btnGrp2 {
+        position: fixed;
+        top: 100%;
+        transform: translateY(200%);
+        width: 95%;
+
+    }
+
 
     
 

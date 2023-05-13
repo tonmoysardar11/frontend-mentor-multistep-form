@@ -58,3 +58,27 @@ const next1=()=>{
     
 };
 
+
+const changePlan=()=>{
+    document.getElementById('switchBtn_1').classList.contains('active_switch')?
+       (
+        document.getElementById('switchBtn_1').classList.remove('active_switch'),
+       document.getElementById('switchBtn_2').classList.add('active_switch'),
+       document.getElementById('plan_1').innerText='$90/year',
+       document.getElementById('plan_2').innerText='$120/year',
+       document.getElementById('plan_3').innerText='$150/year',
+       document.getElementsByClassName('free').forEach(element => {
+        element.style.opacity='1'
+       }) 
+       ):(
+           document.getElementById('switchBtn_1').classList.add('active_switch'),
+           document.getElementById('switchBtn_2').classList.remove('active_switch'),
+           document.getElementById('plan_1').innerText='$9/month',
+           document.getElementById('plan_2').innerText='$12/month',
+           document.getElementById('plan_3').innerText='$15/month',
+           document.getElementsByClassName('free').forEach(element => {
+            element.style.opacity='0'
+           }) 
+       )
+}
+
