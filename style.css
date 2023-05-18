@@ -297,3 +297,48 @@ label {
     display: none;
 
 }
+
+.cardList label{
+    margin: 5px;
+}
+
+.cardList input{
+    display: none;
+}
+
+.cardList2 input{
+background: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+
+
+.cardList2 label{
+    border: 1px solid  hsla(231, 11%, 63%, 0.5);
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.rate{
+    color: hsl(243, 100%, 62%) !important;
+}
+.content{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+

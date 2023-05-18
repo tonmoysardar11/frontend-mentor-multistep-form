@@ -104,3 +104,18 @@ const next2=()=>{
         document.getElementById('.err2').style.display='block';
     }
 }
+
+const back2=()=>{
+    document.getElementById('form1').style.display="block";
+        document.getElementById('form2').style.display="none";
+        document.getElementsByClassName("widget_no")[1].classList.add('widget_active');
+        document.getElementsByClassName("widget_no")[2].classList.remove('widget_active');
+}
+const next3=()=>{
+    
+        document.getElementById('form2').style.display="none";
+        document.getElementById('form3').style.display="block";
+        document.getElementsByClassName("widget_no")[2].classList.remove('widget_active');
+        document.getElementsByClassName("widget_no")[3].classList.add('widget_active');
+    
+}
