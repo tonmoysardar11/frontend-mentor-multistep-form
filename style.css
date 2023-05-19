@@ -33,7 +33,7 @@ main {
 
 
 .sidebar {
-    background-image: url('assets/images/bg-sidebar-desktop.svg');
+    background-image: url('frontend-mentor-multistep-form/assets/images/bg-sidebar-desktop.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     width: 274px;
