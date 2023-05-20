@@ -60,8 +60,14 @@ const next1 = () => {
     }
 
 };
+var planName='';
+var plan = 'Monthly'
+var plan2= 'mo'
+var value=0;
+var stage1=0;
+var stage2=0;
 
-var plan = 'monthly'
+
 const changePlan = () => {
     document.getElementById('switchBtn_1').classList.contains('active_switch') ?
         (
@@ -73,7 +79,8 @@ const changePlan = () => {
             document.getElementById('free1').style.display = 'block',
             document.getElementById('free2').style.display = 'block',
             document.getElementById('free3').style.display = 'block',
-            plan = 'yearly'
+            plan = 'Yearly',
+            plan2='yr'
 
         ) : (
             document.getElementById('switchBtn_1').classList.add('active_switch'),
@@ -84,7 +91,8 @@ const changePlan = () => {
             document.getElementById('free1').style.display = 'none',
             document.getElementById('free2').style.display = 'none',
             document.getElementById('free3').style.display = 'none',
-            plan = 'monthly'
+            plan = 'Monthly',
+            plan2='mo'
 
         )
 }
@@ -96,16 +104,14 @@ const back1 = () => {
     document.getElementsByClassName("widget_no")[1].classList.remove('widget_active');
 }
 
-var value=0;
-var stage1=0;
-var stage2=0;
 const next2 = () => {
     if (document.getElementById('radio1').checked) {
         document.getElementById('form2').style.display = "none";
         document.getElementById('form3').style.display = "block";
         document.getElementsByClassName("widget_no")[1].classList.remove('widget_active');
         document.getElementsByClassName("widget_no")[2].classList.add('widget_active');
-        if (plan == 'monthly') {
+        planName='Arcade';
+        if (plan == 'Monthly') {
             value += 9
         }
         else value += 90
@@ -116,7 +122,8 @@ const next2 = () => {
         document.getElementById('form3').style.display = "block";
         document.getElementsByClassName("widget_no")[1].classList.remove('widget_active');
         document.getElementsByClassName("widget_no")[2].classList.add('widget_active');
-        if (plan == 'monthly') {
+        planName='Advanced';
+        if (plan == 'Monthly') {
             value += 12
         }
         else value += 120
@@ -126,15 +133,15 @@ const next2 = () => {
         document.getElementById('form3').style.display = "block";
         document.getElementsByClassName("widget_no")[1].classList.remove('widget_active');
         document.getElementsByClassName("widget_no")[2].classList.add('widget_active');
-        if (plan == 'monthly') {
+        planName='Pro';
+        if (plan == 'Monthly') {
             value += 15
         }
         else value += 150
     }
     else {
         document.getElementById('.err2').style.display = 'block';
-    }
-    console.log(value);
+    };
     stage1=value;
 }
 
@@ -144,10 +151,9 @@ const back2 = () => {
     document.getElementById('form3').style.display = "none";
     document.getElementsByClassName("widget_no")[1].classList.add('widget_active');
     document.getElementsByClassName("widget_no")[2].classList.remove('widget_active');
-    console.log(value)
 }
 const next3 = () => {
-    if (plan == 'monthly') {
+    if (plan == 'Monthly') {
         if (document.getElementById('check1').checked) {
             value += 1
         }
@@ -158,7 +164,7 @@ const next3 = () => {
             value += 2
         }
     }
-    if (plan == 'yearly') {
+    if (plan == 'Yearly') {
         if (document.getElementById('check1').checked) {
             value += 12
         }
@@ -171,20 +177,29 @@ const next3 = () => {
     }
 
 
-    document.getElementById('form2').style.display = "none";
-    document.getElementById('form3').style.display = "block";
+    document.getElementById('form3').style.display = "none";
+    document.getElementById('form4').style.display = "block";
     document.getElementsByClassName("widget_no")[2].classList.remove('widget_active');
     document.getElementsByClassName("widget_no")[3].classList.add('widget_active');
-    console.log(value)
     stage2=value;
+    document.getElementById('planName').innerHTML=`${planName} (${plan})`
+    document.getElementById('planValue').innerHTML=`$${stage1}/${plan2}`
 
 }
 
 const back3 = () => {
     value=stage1;
-    document.getElementById('form2').style.display = "block";
-    document.getElementById('form3').style.display = "none";
+    document.getElementById('form3').style.display = "block";
+    document.getElementById('form4').style.display = "none";
     document.getElementsByClassName("widget_no")[2].classList.add('widget_active');
     document.getElementsByClassName("widget_no")[3].classList.remove('widget_active');
-    console.log(value)
+}
+
+
+const next4=()=>{
+    
+
+}
+const back4=()=>{
+
 }

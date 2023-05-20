@@ -178,6 +178,11 @@ label {
 
 }
 
+#form4 {
+    display: none;
+
+}
+
 .cardList {
     display: flex;
     justify-content: center;
@@ -340,5 +345,17 @@ background: #fff;
     justify-content: space-between;
     align-items: center;
 }
+
+.mainPlan_head{
+    display: flex;
+    flex-direction: column;
+}
+.mainPlan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 10px;
+}
+
 
 
