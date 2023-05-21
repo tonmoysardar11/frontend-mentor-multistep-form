@@ -33,7 +33,7 @@ main {
 
 
 .sidebar {
-    background-image: url('frontend-mentor-multistep-form/assets/images/bg-sidebar-desktop.svg');
+    background-image: url('bg-sidebar-desktop.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     width: 274px;
@@ -355,6 +355,47 @@ background: #fff;
     justify-content: space-between;
     align-items: center;
     margin: 20px 10px;
+}
+.change{
+    cursor:pointer;
+    color: hsl(231, 11%, 63%);
+    font-size: 12px;
+    
+}
+.checkout hr{
+    width: 95%;
+    margin: 2px auto;
+}
+
+.addons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 10px;
+}
+.addons .planName{
+    color: hsl(231, 11%, 63%);
+}
+
+.addons .planValue{
+    color: hsl(213, 96%, 18%);
+}
+
+#addon1,#addon2,#addon3{
+    display: none;
+}
+.final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 10px 15px 10px;
+}
+.totalvalue{
+    color: hsl(243, 100%, 62%);
+
+}
+#form4 .btn_Nxt{
+    background-color: hsl(243, 100%, 62%);
 }
 
 

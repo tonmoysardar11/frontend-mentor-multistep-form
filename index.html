@@ -162,7 +162,7 @@
                 <h5>Online Service</h5>
                 <p>Access to multiple games</p>
               </div>
-              <p class="rate"> +$1/mo </p>
+              <p class="rate" id="rate1"> +$1/mo </p>
             </div>
           </label>
           <label for='check2'>
@@ -172,7 +172,7 @@
                 <h5>Larger Storage</h5>
                 <p>Extra 1TB of cloud save</p>
               </div>
-              <p class="rate"> +$2/mo </p>
+              <p class="rate" id="rate2"> +$2/mo </p>
             </div>
           </label>
           <label for='check3'>
@@ -182,7 +182,7 @@
                 <h5>Customizable Profile</h5>
                 <p>Custom theme on your profile</p>
               </div>
-              <p class="rate"> +$2/mo </p>
+              <p class="rate" id="rate3"> +$2/mo </p>
             </div>
           </label>
 
@@ -206,18 +206,55 @@
               <div class="planName" id="planName">
                 abc
               </div>
-              <div class="change" onclick="changePlan()"><u>Change</u></div>
+              <div class="change" onclick="change()"><u>Change</u></div>
             </div>
             <div class="planValue" id="planValue">
               xyz
             </div>
+          </div>
+          <hr>
+          <div class="addonsList" id="addonList">
+            <div class="addons" id="addon1">
+              <div class="planName">
+                Online Service
+              </div>
+              <div class="planValue" id="add1">
+                +$1/mo
+              </div>
+            </div>
+            <div class="addons" id="addon2">
+              <div class="planName">
+                Larger Storage
+              </div>
+              <div class="planValue" id="add2">
+                +$2/mo
+              </div>
+            </div>
+            <div class="addons" id="addon3">
+              <div class="planName">
+                Customizable Profile
+              </div>
+              <div class="planValue" id="add3">
+                +$2/mo
+              </div>
+            </div>
+
+            <div class="final">
+              <div class="total" id="total">
+                Total (per month)
+              </div>
+              <div class="totalvalue" id="totalvalue">
+                x
+              </div>
+            </div>
+
           </div>
         </div>
 
       </div>
       <div class="btnGrp2">
         <p class="btn_back" onclick="back3()" style="cursor: pointer;"> Go Back</p>
-        <button class="btn_Nxt" onclick="next4()">Next Step</button>
+        <button class="btn_Nxt" onclick="next4()">Confirm</button>
       </div>
     </div>
 
