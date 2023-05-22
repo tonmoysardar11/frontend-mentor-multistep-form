@@ -13,11 +13,11 @@
     .sidebar {
         margin: 0;
         background-size: cover;
-        background-position: 0px -500px;
         width: 100vw;
-        height: 40vh;
+        height: 35vh;
         display: flex;
         align-items: flex-start;
+        background-image: url('bg-sidebar-mobile.svg');
     }
 
     .widgetList {
@@ -35,6 +35,7 @@
         border-radius: 20px;
         padding: 30px 20px;
         width: 80%;
+        height: 60%;
         z-index: 1;
         background-color: hsl(0, 0%, 100%);
         margin: 0 auto;

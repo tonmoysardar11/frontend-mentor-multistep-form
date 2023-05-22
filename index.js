@@ -55,7 +55,7 @@ const phoneCheck = () => {
 const next1 = () => {
     if (nameCheck() && emailCheck() && phoneCheck()) {
         document.getElementById('form1').style.display = "none";
-        document.getElementById('form2').style.display = "block";
+        document.getElementById('form2').style.display = "flex";
         document.getElementsByClassName("widget_no")[0].classList.remove('widget_active');
         document.getElementsByClassName("widget_no")[1].classList.add('widget_active');
     }
@@ -106,7 +106,7 @@ const changePlan = () => {
 }
 
 const back1 = () => {
-    document.getElementById('form1').style.display = "block";
+    document.getElementById('form1').style.display = "flex";
     document.getElementById('form2').style.display = "none";
     document.getElementsByClassName("widget_no")[0].classList.add('widget_active');
     document.getElementsByClassName("widget_no")[1].classList.remove('widget_active');
@@ -115,7 +115,7 @@ const back1 = () => {
 const next2 = () => {
     if (document.getElementById('radio1').checked) {
         document.getElementById('form2').style.display = "none";
-        document.getElementById('form3').style.display = "block";
+        document.getElementById('form3').style.display = "flex";
         document.getElementsByClassName("widget_no")[1].classList.remove('widget_active');
         document.getElementsByClassName("widget_no")[2].classList.add('widget_active');
         planName = 'Arcade';
@@ -127,7 +127,7 @@ const next2 = () => {
 
     else if (document.getElementById('radio2').checked) {
         document.getElementById('form2').style.display = "none";
-        document.getElementById('form3').style.display = "block";
+        document.getElementById('form3').style.display = "flex";
         document.getElementsByClassName("widget_no")[1].classList.remove('widget_active');
         document.getElementsByClassName("widget_no")[2].classList.add('widget_active');
         planName = 'Advanced';
@@ -138,7 +138,7 @@ const next2 = () => {
     }
     else if (document.getElementById('radio3').checked) {
         document.getElementById('form2').style.display = "none";
-        document.getElementById('form3').style.display = "block";
+        document.getElementById('form3').style.display = "flex";
         document.getElementsByClassName("widget_no")[1].classList.remove('widget_active');
         document.getElementsByClassName("widget_no")[2].classList.add('widget_active');
         planName = 'Pro';
@@ -155,7 +155,7 @@ const next2 = () => {
 
 const back2 = () => {
     value = 0;
-    document.getElementById('form2').style.display = "block";
+    document.getElementById('form2').style.display = "flex";
     document.getElementById('form3').style.display = "none";
     document.getElementsByClassName("widget_no")[1].classList.add('widget_active');
     document.getElementsByClassName("widget_no")[2].classList.remove('widget_active');
@@ -207,7 +207,7 @@ const next3 = () => {
 
 
     document.getElementById('form3').style.display = "none";
-    document.getElementById('form4').style.display = "block";
+    document.getElementById('form4').style.display = "flex";
     document.getElementsByClassName("widget_no")[2].classList.remove('widget_active');
     document.getElementsByClassName("widget_no")[3].classList.add('widget_active');
     stage2 = value;
@@ -221,7 +221,7 @@ const next3 = () => {
 
 const back3 = () => {
     value = stage1;
-    document.getElementById('form3').style.display = "block";
+    document.getElementById('form3').style.display = "flex";
     document.getElementById('form4').style.display = "none";
     document.getElementsByClassName("widget_no")[2].classList.add('widget_active');
     document.getElementsByClassName("widget_no")[3].classList.remove('widget_active');
@@ -232,21 +232,14 @@ const back3 = () => {
 }
 
 const change = () => {
-    addOn=[];
     document.getElementById('form4').style.display = 'none';
-    document.getElementById('form2').style.display = 'block';
+    document.getElementById('form2').style.display = 'flex';
     value = 0;
 
 }
 
-
-
-
-
 const next4 = () => {
-
-
-}
-const back4 = () => {
+    document.getElementById('form4').style.display = "none";
+    document.getElementById('form5').style.display = "flex";
 
 }

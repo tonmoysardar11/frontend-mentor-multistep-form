@@ -56,7 +56,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 0;
+    margin: 25px 0;
 }
 
 .widget_no {
@@ -179,6 +179,10 @@ label {
 }
 
 #form4 {
+    display: none;
+
+}
+#form5 {
     display: none;
 
 }
@@ -396,6 +400,25 @@ background: #fff;
 }
 #form4 .btn_Nxt{
     background-color: hsl(243, 100%, 62%);
+}
+
+.thanknote{
+    text-align: center;
+    margin: 100px 5px;
+    
+}
+.thanknote p{
+    /* max-width: 300px; */
+    font-size: 15px;
+    margin: 10px auto;
+}
+.formcontent{
+    height: 100%;
+    width: 100%;
+}
+
+.formcontent img{
+    margin: 20px 0;
 }
 
 
